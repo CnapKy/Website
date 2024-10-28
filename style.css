@@ -1,0 +1,173 @@
+/* Global Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #111;
+    background-color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #555;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links li:hover {
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #111;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('assets/images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #333;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #111;
+    color: #111;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #111;
+    color: white;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 100px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .fade-in-delayed {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  .fade-in-delayed-2 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+    
+
+  }
+  
